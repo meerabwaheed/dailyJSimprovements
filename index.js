@@ -44,3 +44,16 @@ console.log('Monolithic architecture combines all components into a single unit.
 //    Order Service   Payment Service
 //         |
 // Notification Service
+
+// Advantages of Microservices
+// Easier to scale specific services.
+// Independent deployment.
+// Easier maintenance.
+// Better fault isolation (one service failing doesn't necessarily stop the whole application).
+// Different teams can work on different services simultaneously.
+// Disadvantages of Microservices
+// More complex architecture.
+// Harder debugging and monitoring.
+// Network communication adds latency.
+// Requires service discovery, API gateways, and monitoring tools.
+// More DevOps and infrastructure management.
