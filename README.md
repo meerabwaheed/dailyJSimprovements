@@ -6,3 +6,7 @@
 | Development | Simpler                  | More complex                   |
 | Maintenance | Harder as app grows      | Easier for large applications  |
 | Best For    | Small to medium projects | Large, enterprise applications |
+
+Rule to Remember
+Monolithic = One big application containing everything.
+Microservices = Many small applications (services) working together through APIs.
