@@ -30,3 +30,17 @@ console.log('Monolithic architecture combines all components into a single unit.
 // ├── Payments
 // ├── Notifications
 // └── Database
+
+Microservices Architecture
+
+Each feature is its own service.
+
+                Client
+                   |
+        ---------------------
+        |         |         |
+   User Service  Product Service
+        |              |
+   Order Service   Payment Service
+        |
+Notification Service
