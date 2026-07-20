@@ -59,3 +59,7 @@ A **Microservices Architecture** divides an application into multiple small, ind
 
 * **Monolithic** → One application containing everything.
 * **Microservices** → Multiple independent services working together through APIs.
+{
+  "name": "Meerab",
+  "age": 20
+}
