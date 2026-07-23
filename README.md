@@ -63,3 +63,22 @@ A **Microservices Architecture** divides an application into multiple small, ind
   "name": "Meerab",
   "age": 20
 }
+// Group an array of objects by a key
+function groupBy(arr, key) {
+  return arr.reduce((acc, item) => {
+    const group = item[key];
+    acc[group] = acc[group] || [];
+    acc[group].push(item);
+    return acc;
+  }, {});
+}
+
+// Example usage
+const orders = [
+  { id: 1, status: "pending" },
+  { id: 2, status: "shipped" },
+  { id: 3, status: "pending" },
+];
+
+console.log(groupBy(orders, "status"));
+// { pending: [...], shipped: [...] }
