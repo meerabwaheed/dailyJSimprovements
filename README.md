@@ -281,3 +281,170 @@ console.log(calculator(20, 10, "+"));
 console.log(calculator(20, 10, "-"));
 console.log(calculator(20, 10, "*"));
 console.log(calculator(20, 10, "/"));
+4. Arithmetic Operators
+let a = 10;
+let b = 5;
+
+console.log(a + b); // 15
+console.log(a - b); // 5
+console.log(a * b); // 50
+console.log(a / b); // 2
+console.log(a % b); // 0
+5. If-Else Statement
+let age = 18;
+
+if (age >= 18) {
+    console.log("You can vote.");
+} else {
+    console.log("You cannot vote.");
+}
+6. For Loop
+for (let i = 1; i <= 5; i++) {
+    console.log(i);
+}
+
+Output
+
+1
+2
+3
+4
+5
+7. While Loop
+let i = 1;
+
+while (i <= 5) {
+    console.log(i);
+    i++;
+}
+8. Function
+function greet(name) {
+    return "Hello " + name;
+}
+
+console.log(greet("Meerab"));
+9. Arrow Function
+const add = (a, b) => {
+    return a + b;
+};
+
+console.log(add(5, 7));
+
+Or the short version:
+
+const add = (a, b) => a + b;
+
+console.log(add(5, 7));
+10. Arrays
+let fruits = ["Apple", "Banana", "Orange"];
+
+console.log(fruits[0]);
+console.log(fruits.length);
+
+fruits.push("Mango");
+
+console.log(fruits);
+11. Loop Through an Array
+let numbers = [10, 20, 30, 40];
+
+for (let number of numbers) {
+    console.log(number);
+}
+12. Objects
+let student = {
+    name: "Meerab",
+    age: 22,
+    city: "Lahore"
+};
+
+console.log(student.name);
+console.log(student.age);
+13. Array Methods
+let numbers = [1, 2, 3, 4, 5];
+
+numbers.forEach(num => {
+    console.log(num);
+});
+14. Map Method
+let numbers = [1, 2, 3];
+
+let doubled = numbers.map(num => num * 2);
+
+console.log(doubled);
+
+Output
+
+[2, 4, 6]
+15. Filter Method
+let numbers = [10, 15, 20, 25, 30];
+
+let result = numbers.filter(num => num >= 20);
+
+console.log(result);
+
+Output
+
+[20, 25, 30]
+16. DOM Manipulation
+
+HTML
+
+<p id="text">Hello</p>
+<button onclick="changeText()">Click Me</button>
+
+JavaScript
+
+function changeText() {
+    document.getElementById("text").innerHTML = "Welcome to JavaScript!";
+}
+17. Event Listener
+<button id="btn">Click Me</button>
+const button = document.getElementById("btn");
+
+button.addEventListener("click", () => {
+    alert("Button Clicked!");
+});
+18. Fetch API
+fetch("https://jsonplaceholder.typicode.com/users")
+    .then(response => response.json())
+    .then(data => console.log(data))
+    .catch(error => console.log(error));
+19. Async/Await
+async function getUsers() {
+    try {
+        const response = await fetch("https://jsonplaceholder.typicode.com/users");
+        const data = await response.json();
+        console.log(data);
+    } catch (error) {
+        console.log(error);
+    }
+}
+
+getUsers();
+20. Mini Project (Number Guessing)
+const secret = 7;
+
+let guess = Number(prompt("Guess a number (1-10):"));
+
+if (guess === secret) {
+    alert("Correct!");
+} else {
+    alert("Wrong! The correct number was " + secret);
+}
+Recommended Learning Order
+Variables (let, const)
+Data Types
+Operators
+If/Else
+Loops
+Functions
+Arrays
+Objects
+DOM Manipulation
+Events
+ES6 Features (Arrow Functions, Destructuring, Spread)
+Array Methods (map, filter, reduce)
+Fetch API
+Async/Await
+Modules
+Projects
