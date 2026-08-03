@@ -512,3 +512,20 @@ Output
 3
 4
 5
+Is Node.js installed?
+
+Open the terminal in VS Code (`Ctrl + ``) and run:
+
+node -v
+
+If you see something like:
+
+v22.18.0
+
+then Node.js is installed.
+
+If you get:
+
+'node' is not recognized...
+
+then install Node.js from its official website and restart VS Code.
