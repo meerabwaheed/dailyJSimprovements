@@ -464,7 +464,7 @@ let city = "Lahore";
 city = "Islamabad"; // Allowed
 
 const pi = 3.14;
-// pi = 3.15 ❌ Error
+// pi = 3.15  Error
 let → Value can change.
 const → Value cannot change.
 2. Data Types
